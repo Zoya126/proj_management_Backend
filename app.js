@@ -12,7 +12,7 @@ const morgan = require('morgan');
 const app = express();
 
 app.use(morgan('dev'));
-app.use(cors({origin: "*"}));
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
