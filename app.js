@@ -12,7 +12,7 @@ const morgan = require('morgan');
 const app = express();
 
 app.use(morgan('dev'));
-app.use(cors());
+app.use(cors({origin: 'https://project-management-frontend-neon.vercel.app/'}));
 app.use(express.json());
 
 app.get('/', (req, res) => {
